@@ -102,35 +102,34 @@ export default function HeaderHero({ menuOpen, setMenuOpen }) {
             ARCE Eyewear — Every detail deserves a closer look
           </h1>
 
-          <img
-            className="hero-object hero-eyewear"
-            src={heroEyewear}
-            alt="ARCE 银色无框矩形眼镜"
-            width="2048"
-            height="787"
-            fetchPriority="high"
-            decoding="async"
-          />
+          <div className="hero-marquee-back" aria-hidden="true">
+            <div className="hero-marquee-track">
+              <span>Every detail deserves a closer look</span><b>◆</b>
+              <span>Every detail deserves a closer look</span><b>◆</b>
+              <span>Every detail deserves a closer look</span>
+            </div>
+          </div>
 
-          <div className="ticker ticker-one" aria-hidden="true">
-            <div>
-              <span>Every detail deserves a closer look</span><b>◆</b>
-              <span>Every detail deserves a closer look</span><b>◆</b>
-              <span>Every detail deserves a closer look</span>
-            </div>
-          </div>
-          <div className="ticker ticker-lens" aria-hidden="true">
-            <div>
-              <span>Every detail deserves a closer look</span><b>◆</b>
-              <span>Every detail deserves a closer look</span><b>◆</b>
-              <span>Every detail deserves a closer look</span>
-            </div>
-          </div>
-          <div className="ticker ticker-two" aria-hidden="true">
-            <div>
-              <span>Every detail deserves a closer look</span><b>◆</b>
-              <span>Every detail deserves a closer look</span>
-            </div>
+          <div className="hero-eyewear-stage">
+            <img
+              className="hero-object hero-eyewear"
+              src={heroEyewear}
+              alt="ARCE 银色无框矩形眼镜"
+              width="2048"
+              height="787"
+              fetchPriority="high"
+              decoding="async"
+            />
+
+            {['left', 'right'].map((lens) => (
+              <div className={`lens-marquee lens-marquee-${lens}`} aria-hidden="true" key={lens}>
+                <div className="lens-marquee-track">
+                  <span>Every detail deserves a closer look</span><b>◆</b>
+                  <span>Every detail deserves a closer look</span><b>◆</b>
+                  <span>Every detail deserves a closer look</span>
+                </div>
+              </div>
+            ))}
           </div>
 
           <div className="hero-footnote">
