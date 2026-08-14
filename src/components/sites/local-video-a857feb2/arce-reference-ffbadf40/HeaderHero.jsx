@@ -119,6 +119,13 @@ export default function HeaderHero({ menuOpen, setMenuOpen }) {
               <span>Every detail deserves a closer look</span>
             </div>
           </div>
+          <div className="ticker ticker-lens" aria-hidden="true">
+            <div>
+              <span>Every detail deserves a closer look</span><b>◆</b>
+              <span>Every detail deserves a closer look</span><b>◆</b>
+              <span>Every detail deserves a closer look</span>
+            </div>
+          </div>
           <div className="ticker ticker-two" aria-hidden="true">
             <div>
               <span>Every detail deserves a closer look</span><b>◆</b>
