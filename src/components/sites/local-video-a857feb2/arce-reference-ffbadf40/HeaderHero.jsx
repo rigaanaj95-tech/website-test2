@@ -102,15 +102,15 @@ export default function HeaderHero({ menuOpen, setMenuOpen }) {
             ARCE Eyewear — Every detail deserves a closer look
           </h1>
 
-          <div className="hero-marquee-back" aria-hidden="true">
-            <div className="hero-marquee-track">
-              <span>Every detail deserves a closer look</span><b>◆</b>
-              <span>Every detail deserves a closer look</span><b>◆</b>
-              <span>Every detail deserves a closer look</span>
-            </div>
-          </div>
-
           <div className="hero-eyewear-stage">
+            <div className="hero-marquee-back" aria-hidden="true">
+              <div className="hero-marquee-track">
+                <span>Every detail deserves a closer look</span><b>◆</b>
+                <span>Every detail deserves a closer look</span><b>◆</b>
+                <span>Every detail deserves a closer look</span>
+              </div>
+            </div>
+
             <img
               className="hero-object hero-eyewear"
               src={heroEyewear}
