@@ -111,6 +111,14 @@ export default function HeaderHero({ menuOpen, setMenuOpen }) {
               </div>
             </div>
 
+            <div className="lens-marquee" aria-hidden="true">
+              <div className="lens-marquee-track">
+                <span>Every detail deserves a closer look</span><b>◆</b>
+                <span>Every detail deserves a closer look</span><b>◆</b>
+                <span>Every detail deserves a closer look</span>
+              </div>
+            </div>
+
             <img
               className="hero-object hero-eyewear"
               src={heroEyewear}
@@ -121,15 +129,15 @@ export default function HeaderHero({ menuOpen, setMenuOpen }) {
               decoding="async"
             />
 
-            {['left', 'right'].map((lens) => (
-              <div className={`lens-marquee lens-marquee-${lens}`} aria-hidden="true" key={lens}>
-                <div className="lens-marquee-track">
-                  <span>Every detail deserves a closer look</span><b>◆</b>
-                  <span>Every detail deserves a closer look</span><b>◆</b>
-                  <span>Every detail deserves a closer look</span>
-                </div>
-              </div>
-            ))}
+            <img
+              className="hero-object hero-eyewear hero-eyewear-details"
+              src={heroEyewear}
+              alt=""
+              width="2048"
+              height="787"
+              aria-hidden="true"
+              decoding="async"
+            />
           </div>
 
           <div className="hero-footnote">
